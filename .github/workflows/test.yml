@@ -6,12 +6,7 @@ on:
      environment:
         description: 'Environment to run tests against'
         type: environment
-        required: true
-     jobs:
-        description: 'Which job reuired need to run'
-        required: true
-        type: boolean
- 
+        required: true 
 jobs:
   build:
    runs-on: ubuntu-latest
