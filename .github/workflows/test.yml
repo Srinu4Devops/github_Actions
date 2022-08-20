@@ -9,18 +9,20 @@ on:
         required: true 
 jobs:
   build:
+   if: ${{github.event.inputs.environment == 'Development'}}
    runs-on: ubuntu-latest
    steps:
-    - name: echo a string for ${{github.event.inputs.environment}} environment
+    - name: echo a string for ${{github.event.inputs.environment}} Environment
       run: echo "Hello Srini! -- Development"
     - name: multiline script
       run: |
         node -v
         npm -v
   script:
+   if: ${{github.event.inputs.environment == 'Production'}}
    runs-on: ubuntu-latest
    steps:
-    - name: echo a string for ${{github.event.inputs.environment}}environment
+    - name: echo a string for ${{github.event.inputs.environment}} Environment
       run: echo "Hello Srini! -- Production"
     - name: multiline script
       run: |
