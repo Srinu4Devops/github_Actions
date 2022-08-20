@@ -7,4 +7,4 @@ Given inputs for workflow dispatch event
 Just changeing something here for understanding
 Needs deleted in srini workflow
 Added jobs as input in srini 
-chnage to boolean
+change to boolean

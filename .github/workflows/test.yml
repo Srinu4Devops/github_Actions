@@ -1,4 +1,4 @@
-name: script excution by srinivas
+name: script excution by srinivas - Continous Integration
 on:
   workflow_dispatch:
    paths: [Templates_Two/**]
@@ -16,7 +16,7 @@ jobs:
   build:
    runs-on: ubuntu-latest
    steps:
-    - name: echo a string
+    - name: echo a string for ${{github.event.inputs.environment}} environment
       run: echo "Hello Srini! -- Development"
     - name: multiline script
       run: |
@@ -25,7 +25,7 @@ jobs:
   script:
    runs-on: ubuntu-latest
    steps:
-    - name: echo a string
+    - name: echo a string for ${{github.event.inputs.environment}}environment
       run: echo "Hello Srini! -- Production"
     - name: multiline script
       run: |
