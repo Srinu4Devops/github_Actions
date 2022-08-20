@@ -1,4 +1,4 @@
-name: script excution by MothilalNaik
+name: script excution by srini
 on: 
  push:
   branches: [develop]
