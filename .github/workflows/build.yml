@@ -1,8 +1,8 @@
-name: script excution by Mothi
+name: script excution by MothilalNaik
 on: 
  push:
   branches: [develop]
-  paths: 'Template/**'
+  paths: 'Template/file.txt'
 
 jobs:
   build:
