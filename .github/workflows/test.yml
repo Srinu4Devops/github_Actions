@@ -1,0 +1,30 @@
+name: script excution by MothilalNaik
+on: 
+ push:
+  branches: [develop]
+  paths: 'Templates_Two/secound.txt'
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   environment: Development
+   steps:
+    - name: echo a string
+      run: echo "Hello Srini! - Developement"
+    - name: multiline script
+      run: |
+        node -v
+        npm -v
+
+  scripting:
+   needs: build
+   runs-on: ubuntu-latest
+   environment: Production
+   steps:
+    - name: echo a string
+      run: echo "Hello Srini! - production"
+    - name: multiline script
+      run: |
+       node -v
+       npm -v
+
