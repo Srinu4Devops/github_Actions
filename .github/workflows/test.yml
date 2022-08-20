@@ -21,7 +21,6 @@ jobs:
         npm -v
 
   scripting:
-   needs: build
    runs-on: ubuntu-latest
    environment: Production
    steps:
