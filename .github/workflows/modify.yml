@@ -10,9 +10,12 @@ on:
   pull_request:
     branches:
       - develop/*
+    paths: [Folder_Srini/**]
 jobs:
   build:
    if: ${{github.event.inputs.environment == 'Development'}}
+#  if: ${{ github.ref == 'refs/head/develop' }}  -- For Development branch
+#  if: ${{ github.ref == 'refs/head/master' }} -- for production branch
    runs-on: ubuntu-latest
    steps:
     - name: echo a string for ${{github.event.inputs.environment}} Environment
