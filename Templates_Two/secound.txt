@@ -1,2 +1,33 @@
 this secound template which we reuired to add some changes 
 It is like filtering option so we need to write the code accordingly.
+
+
+name: script excution by Mothi
+on: 
+ push:
+  branches: [develop]
+  paths: 'Template/**'
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   environment: Development
+   steps:
+    - name: echo a string
+      run: echo "Hello Mothi! - Developement"
+    - name: multiline script
+      run: |
+        node -v
+        npm -v
+
+  scripting:
+   runs-on: ubuntu-latest
+   environment: Production
+   steps:
+    - name: echo a string
+      run: echo "Hello Mothi! - production"
+    - name: multiline script
+      run: |
+       node -v
+       npm -v
+
