@@ -1,4 +1,4 @@
-name: script excution by srini
+name: script excution by srinivas
 on: 
  push:
   branches: [develop]
