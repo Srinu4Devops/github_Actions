@@ -1,9 +1,8 @@
 name: script excution by srinivas
 on: 
  push:
-  branches: [develop]
   paths: [Templates_Two/**]
-
+ workflow_dispatch:
 jobs:
   build:
    runs-on: ubuntu-latest
