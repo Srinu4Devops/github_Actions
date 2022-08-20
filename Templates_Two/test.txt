@@ -4,3 +4,4 @@ Going chnage the workflow pipeline'
 Instead of push i am trying to give manual trigger
 let see how it will execute.
 Given inputs for workflow dispatch event
+Just changeing something here for understanding
