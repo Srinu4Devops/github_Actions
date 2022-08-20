@@ -1,8 +1,13 @@
 name: script excution by srinivas
-on: 
- push:
-  paths: [Templates_Two/**]
- workflow_dispatch:
+on:
+  workflow_dispatch:
+   paths: [Templates_Two/**]
+   inputs:
+     environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+ 
 jobs:
   build:
    runs-on: ubuntu-latest
