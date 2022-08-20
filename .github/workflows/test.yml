@@ -2,7 +2,7 @@ name: script excution by srinivas
 on: 
  push:
   branches: [develop]
-  paths: 'Templates_Two/secound.txt'
+  paths: [Templates_Two/**]
 
 jobs:
   build:
