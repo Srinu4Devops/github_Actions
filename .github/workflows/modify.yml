@@ -1,7 +1,9 @@
 name: Srini Modified File
 on:
+  push:
+    branches: [ develop]
   workflow_dispatch:
-   paths: [Folder_Srini/**]
+  #  paths: [Folder_Srini/**]
    inputs:
      environment:
         description: 'Environment to run tests against'

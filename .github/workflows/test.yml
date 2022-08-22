@@ -1,7 +1,10 @@
 name: script excution by srinivas - Continous Integration
 on:
+  push: 
+   branches:
+     - "[ develop ]"
   workflow_dispatch:
-   paths: [Templates_Two/**]
+  #  paths: [Templates_Two/**]
    inputs:
      environment:
         description: 'Environment to run tests against'

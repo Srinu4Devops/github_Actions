@@ -2,7 +2,7 @@ name: script excution by MothilalNaik
 on: 
  push:
   branches: [develop]
-  paths: [Template/**]
+  # paths: [Template/**]
 
 jobs:
   build:
