@@ -16,11 +16,9 @@ on:
         required: true
      covi:
         type: boolean
-        description: 'Name of the 2nd employee'
+        description: 'Please select name to deploy'
         options:
-          - srinu
           - thiru
-          - mothi
         required: false
   pull_request:
     branches:
