@@ -19,7 +19,7 @@ on:
         description: 'Please select name to deploy'
         options:
           - thiru
-        required: true
+        required: false
   pull_request:
     branches:
       - develop/*
