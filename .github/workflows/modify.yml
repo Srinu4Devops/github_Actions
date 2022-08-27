@@ -13,6 +13,8 @@ on:
         options:
           - srinu
           - thiru
+          - mothi
+          - parsu
         required: true
   pull_request:
     branches:
