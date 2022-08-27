@@ -15,7 +15,7 @@ on:
           - thiru
         required: true
      covi:
-        type: choice
+        type: boolean
         description: 'Name of the 2nd employee'
         options:
           - srinu
