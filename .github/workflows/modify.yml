@@ -20,6 +20,7 @@ on:
         options:
           - thiru
         required: false
+        default: false
   pull_request:
     branches:
       - develop/*
