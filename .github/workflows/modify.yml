@@ -19,7 +19,7 @@ on:
       - develop/*
 jobs:
   build:
-   if: ${{github.event.inputs.environment == 'Development'}} && ${{github.event.inputs.name == srinu}}
+   if: ${{github.event.inputs.environment == 'Development'}} && ${{github.event.inputs.name == 'srinu'}}
    runs-on: ubuntu-latest
    steps:
     - name: echo a string for ${{github.event.inputs.environment}} Environment
@@ -29,7 +29,7 @@ jobs:
         node -v
         npm -v
   script:
-   if: ${{github.event.inputs.environment == 'Development'}} && ${{{github.event.inputs.name == thiru}}
+   if: ${{github.event.inputs.environment == 'Development'}} && ${{github.event.inputs.name == 'thiru'}}
    runs-on: ubuntu-latest
    steps:
     - name: echo a string for ${{github.event.inputs.environment}} Environment
