@@ -39,7 +39,7 @@ jobs:
   #  if: ${{ github.event.inputs.environment == 'Development' }}
   #  runs-on: ubuntu-latest
     - name: echo a string for ${{github.event.inputs.environment}} Environment
-      if: ${{ github.event.inputs.covi == 'thiru' }}
+      if: ${{ github.event.inputs.covi }}
       run: echo "Hello Thiru! -- Development"
     - name: multiline script for thiru
       run: |
