@@ -43,7 +43,7 @@ jobs:
     - name: echo a string for ${{github.event.inputs.environment}} Environment
       if: ${{ github.event.inputs.covi == 'thiru' }}
       run: echo "Hello Thiru! -- Development"
-    - name: multiline script
+    - name: multiline script for thiru
       run: |
         node -v
         npm -v
