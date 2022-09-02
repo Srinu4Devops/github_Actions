@@ -1,47 +1,30 @@
 name: Srini Modified File
 on:
   workflow_dispatch:
-   paths: [Folder_Srini/**]
+   paths: 
+    - Folder_Srini/**
+    - .github/workflows/modify.yml
    inputs:
      environment:
         description: 'Environment to run tests against'
         type: environment
-        required: true 
-     criter:
-        type: choice
-        description: 'Name of the employee'
-        options:
-          - srinu
-          - thiru
         required: true
-     covi:
-        type: boolean
-        description: 'Please select name to deploy'
-        options:
-          - thiru
-        required: false
-        default: false
-  pull_request:
-    branches:
-      - develop/*
 jobs:
   build:
    if: ${{ github.event.inputs.environment == 'Development' }}
    runs-on: ubuntu-latest
    steps:
     - name: echo a string for  Environment
-      if: ${{ github.event.inputs.criter == 'srinu' }}
       run: echo "Hello Srini! -- Development"
-    # - name: multiline script
-    #   run: |
-    #     node -v
-    #     npm -v
-  # script:
-  #  if: ${{ github.event.inputs.environment == 'Development' }}
-  #  runs-on: ubuntu-latest
+    - name: multiline script
+      run: |
+        node -v
+  script:
+   if: ${{ github.event.inputs.environment == 'Production' }}
+   runs-on: ubuntu-latest
+   steps:
     - name: echo a string for ${{github.event.inputs.environment}} Environment
-      if: ${{ github.event.inputs.covi }}
-      run: echo "Hello Thiru! -- Development"
+      run: echo "Hello Thiru! -- Production"
     - name: multiline script for thiru
       run: |
         node -v
